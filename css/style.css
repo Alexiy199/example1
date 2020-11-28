@@ -1,0 +1,346 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: "Open Sans", sans-serif;
+    width: 1579px;
+    height: 5923px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+/*
+.wh {
+    max-width: 1579px;
+    max-height: 5923px;
+}*/
+
+.header {
+    width: 1579px;
+    height: 688px;
+    background-color: #f6f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 1249px;
+    height: 89px;
+    background-color: #000000;
+}
+
+.navigation {
+    padding: 44px 24px 33px 23px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.49px;
+    transition: all 0.8s ease 0s;
+}
+
+.navigation:hover {
+    background-color: #ff3f40;
+    transition: all 0.8s ease 0s;
+}
+
+h1 {
+    margin: 108px 0px 36px 164px;
+    display: inline-block;
+    width: 588px;
+    height: 117px;
+    color: #000000;
+    font-family: "Open Sans - Extrabold";
+    font-size: 60px;
+    line-height: 72px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.text_header {
+    margin: 0px 0px 0px 164px;
+    display: inline-block;
+    width: 512px;
+    height: 73px;
+    opacity: 0.7;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+video {
+    position: absolute;
+    top: 221px;
+    right: 164px;
+}
+
+.btn1 {
+    border: 2px solid #ff2d2d;
+    border-radius: 4px;
+    margin: 38px 287px 123px 164px;
+    width: 237px;
+    height: 58px;
+    cursor: pointer;
+    color: #ff2d2d;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34.06px;
+    transition: all 0.8s ease 0s;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: #ff2d2d;
+    transition: all 0.8s ease 0s;
+}
+
+/*content*/
+
+.box {
+    position: relative;
+    display: flex;
+    margin: 0px 164px;
+}
+
+.text_content {
+    margin: 112px 0px 0px 0px;
+    display: inline-block;
+    text-align: left;
+}
+
+.text_title {
+    opacity: 0.8;
+    color: #000000;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+}
+
+.child_text_content {
+    display: block;
+    width: 500px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.services {
+    position: absolute;
+    right: 0;
+    display: flrx;
+    flex-wrap: wrap;
+    width: 539px;
+    margin: 108px 0px 133px 0px;
+}
+
+.service_item {
+    width: 240px;
+    display: inline-block;
+}
+
+.service_item:nth-child(odd) {
+    margin: 0px 50px 49px 0px;
+}
+
+.service_text {
+    opacity: 0.7;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.btn2 {
+    border: 2px solid #ff2d2d;
+    border-radius: 4px;
+    width: 237px;
+    height: 58px;
+    cursor: pointer;
+    color: #ff2d2d;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34.06px;
+    transition: all 0.8s ease 0s;
+    margin-top: 58px;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #ff2d2d;
+    transition: all 0.8s ease 0s;
+}
+
+.box2 {
+    max-width: 504px;
+    margin: 216px 522px 88px 553px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.line {
+    width: 132px;
+    height: 3px;
+    background-color: #ff2d2d;
+}
+
+.cards {
+    width: 1252px;
+    padding: 0;
+    margin: 0px 165px 0px 162px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards_item {
+    margin: 0px 10px 15px 0px;
+    width: 299px;
+    height: 291px;
+    background-color: silver;
+}
+
+.cards_link {
+    margin-bottom: 66px;
+    margin-right: 57px;
+    opacity: 0.7;
+    color: #000000;
+    font-family: "Open Sans - Semibold";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+    text-decoration: none;
+}
+
+.box_team {
+    padding: 0;
+    width: 1252px;
+    max-height: 700px;
+    margin: 0px 172px 0px 155px;
+}
+
+.card_team {
+    float: left;
+    margin: 69px 74px 0px 0px;
+    width: 321px;
+    height: 458px;
+    background-color: silver;
+}
+
+.team_link {
+    text-decoration: none;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    margin: 44px 0px 35px 0px;
+    padding-right: 33px;
+    display: inline-block;
+}
+
+.card_team_mini {
+    position: relative;
+    margin: 0px 20px 0px 0px;
+    width: 197px;
+    height: 214px;
+    background-color: silver;
+}
+
+.card_block {
+    display: flex;
+    margin: 0;
+}
+
+.name_card_team {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.17px;
+    text-decoration: none;
+    padding: 10px 44px 10px 51px;
+}
+
+.box_subscribe {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    text-align: center;
+    width: 1577px;
+    height: 512px;
+    background-color: #f5f0dd;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.subscribe_text {
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.05px;
+    white-space: nowrap;
+    margin-bottom: 31px;
+}
+
+.subscribe_text2 {
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 62px;
+}
+
+.btn3 {
+    width: 214px;
+    height: 79px;
+    border: 2px solid #ff2d2d;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff2d2d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34.06px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+    margin-left: 22px;
+}
+
+.inp_subscribe {
+    width: 521px;
+    height: 79px;   
+    font-size: 24px;
+    border-radius: 4px;
+}
+z
