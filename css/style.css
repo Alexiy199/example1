@@ -6,8 +6,6 @@ body {
     min-width: 100%;
     min-height: 100%;
     font-family: "Open Sans", sans-serif;
-    width: 1579px;
-    height: 5923px;
 }
 
 *,
@@ -16,11 +14,10 @@ body {
     box-sizing: inherit;
 }
 
-/*
 .wh {
     max-width: 1579px;
     max-height: 5923px;
-}*/
+}
 
 .header {
     width: 1579px;
@@ -243,6 +240,18 @@ video {
     margin: 0px 172px 0px 155px;
 }
 
+.block_text_team {
+    width: 500px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.block_text_team2 {
+    width: 700px;
+    height: 80px;
+    overflow: scroll;
+}
+
 .card_team {
     float: left;
     margin: 69px 74px 0px 0px;
@@ -339,8 +348,117 @@ video {
 
 .inp_subscribe {
     width: 521px;
-    height: 79px;   
+    height: 79px;
     font-size: 24px;
     border-radius: 4px;
 }
-z
+/* BLOCK-GET IN TOUCH*/
+
+.inp_form {
+    margin: 75px 54px 46px 0px;
+    width: 339px;
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.message {
+    margin-bottom: 45px;
+    width: 731px;
+    height: 249px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+}
+
+textarea[type="text"]::placeholder {
+    color: black;
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn_sub {
+    width: 728px;
+    height: 72px;
+    border-radius: 5px;
+    background-color: #ff3b3b;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34.06px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+
+.get_form {
+    margin: 0px 107px 0px 0px;
+}
+
+.block_touch {
+    margin-bottom: 110px;
+    margin-left: 165px;
+    position: relative;
+    height: 731px;
+    width: 1414px;
+}
+
+.info_block {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 145px 0px 0px 79px;
+    background-color: #2d2d2d;
+    width: 577px;
+    height: 481px;
+    margin: 0;
+}
+
+.title_info_block {
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 34.06px;
+    text-transform: uppercase;
+    letter-spacing: 0.32px;
+}
+
+.contact {
+    opacity: 0.8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/*FOOTER*/
+
+.footer {
+    width: 1583px;
+    height: 111px;
+    display: flex;
+    padding: 47px 167px 31px 169px;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.foter_text {
+    color: #b8b8b8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.link_footer {
+    padding-left: 18px;
+}
