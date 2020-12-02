@@ -14,15 +14,21 @@ body {
     box-sizing: inherit;
 }
 
-.wh {
+.header {
+    margin: 0 auto;
+    position: relative;
     max-width: 1579px;
-    max-height: 5923px;
+    background-color: #f6f2f2;
 }
 
-.header {
-    width: 1579px;
-    height: 688px;
-    background-color: #f6f2f2;
+@media (max-width: 1440px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: static;
+    }
 }
 
 nav {
@@ -30,8 +36,8 @@ nav {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    width: 1249px;
-    height: 89px;
+    max-width: 1249px;
+    max-height: 89px;
     background-color: #000000;
 }
 
@@ -43,7 +49,6 @@ nav {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    text-align: left;
     text-transform: uppercase;
     letter-spacing: 0.49px;
     transition: all 0.8s ease 0s;
@@ -57,8 +62,8 @@ nav {
 h1 {
     margin: 108px 0px 36px 164px;
     display: inline-block;
-    width: 588px;
-    height: 117px;
+    max-width: 588px;
+    max-height: 117px;
     color: #000000;
     font-family: "Open Sans - Extrabold";
     font-size: 60px;
@@ -68,11 +73,18 @@ h1 {
     letter-spacing: 1.5px;
 }
 
+@media (max-height: 1400px) {
+    h1 {
+        text-align: center;
+        margin: 40px 10px auto;
+    }
+}
+
 .text_header {
     margin: 0px 0px 0px 164px;
     display: inline-block;
-    width: 512px;
-    height: 73px;
+    max-width: 512px;
+    max-height: 73px;
     opacity: 0.7;
     color: #000000;
     font-family: "Open Sans";
@@ -81,10 +93,28 @@ h1 {
     line-height: 28px;
 }
 
-video {
+@media (max-height: 1400px) {
+    .text_header {
+        text-align: center;
+        margin: 30px auto;
+    }
+}
+
+.video {
+    width: 551px;
+    height: 356px;
     position: absolute;
     top: 221px;
     right: 164px;
+}
+
+@media (max-width: 1450px) {
+    .video {
+        max-width: 551px;
+        max-height: 356px;
+        position: static;
+        margin: 30px auto;
+    }
 }
 
 .btn1 {
@@ -102,6 +132,12 @@ video {
     transition: all 0.8s ease 0s;
 }
 
+@media (max-width: 1440px) {
+    .btn1 {
+        margin: 30px;
+    }
+}
+
 .btn1:hover {
     color: white;
     background-color: #ff2d2d;
@@ -110,16 +146,39 @@ video {
 
 /*content*/
 
+.content {
+    margin: 0 auto;
+    max-width: 1590px;
+}
+
 .box {
     position: relative;
     display: flex;
     margin: 0px 164px;
+    max-width: 1579px;
+}
+
+@media (max-width: 1382px) {
+    .box {
+        align-items: center;
+        text-align: center;
+        position: static;
+        display: block;
+    }
 }
 
 .text_content {
     margin: 112px 0px 0px 0px;
     display: inline-block;
+    max-width: 509px;
     text-align: left;
+}
+
+@media (max-width: 1382px) {
+    .text_content {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .text_title {
@@ -134,24 +193,41 @@ video {
 
 .child_text_content {
     display: block;
-    width: 500px;
+    max-width: 500px;
     color: #000000;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
 }
+
 .services {
     position: absolute;
     right: 0;
     display: flrx;
     flex-wrap: wrap;
-    width: 539px;
+    max-width: 539px;
     margin: 108px 0px 133px 0px;
+}
+
+@media (max-width: 1382px) {
+    .services {
+        position: static;
+        margin: 130px 0px auto;
+        padding: 0;
+        display: inline-block;
+    }
 }
 
 .service_item {
     width: 240px;
     display: inline-block;
+}
+
+@media (max-width: 1382px) {
+    .sservice_item {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .service_item:nth-child(odd) {
@@ -189,11 +265,17 @@ video {
 
 .box2 {
     max-width: 504px;
-    margin: 216px 522px 88px 553px;
+    margin: 216px auto 88px;
     display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-widh: 1382px) {
+    .box2 {
+        margin: 116px auto 50px;
+    }
 }
 
 .line {
@@ -202,14 +284,24 @@ video {
     background-color: #ff2d2d;
 }
 
+@media (max-heght: 700px) {
+    .line {
+        width: 100px;
+        height: 2px;
+        background-color: #ff2d2d;
+    }
+}
+
 .cards {
-    width: 1252px;
+    max-width: 1500px;
+    height: 705px;
     padding: 0;
     margin: 0px 165px 0px 162px;
     display: flex;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 
 .cards_item {
@@ -219,9 +311,15 @@ video {
     background-color: silver;
 }
 
+.block_link_cards {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .cards_link {
-    margin-bottom: 66px;
-    margin-right: 57px;
+    display: inline-block;
+    margin: 0px 57px 66px 0px;
     opacity: 0.7;
     color: #000000;
     font-family: "Open Sans - Semibold";
@@ -233,22 +331,34 @@ video {
     text-decoration: none;
 }
 
+.cards_link:hover {
+    color: #ff2d2d;
+}
+
 .box_team {
     padding: 0;
-    width: 1252px;
-    max-height: 700px;
-    margin: 0px 172px 0px 155px;
+    max-width: 1352px;
+    margin: 0px 160px 110px 155px;
+}
+
+@media (max-width: 1320px) {
+    .box_team {
+        display: flex;
+        margin: 0 auto;
+        overflow: scroll;
+        flex-direction: column;
+    }
 }
 
 .block_text_team {
-    width: 500px;
-    height: 200px;
+    max-width: 600px;
+    max-height: 200px;
     overflow: scroll;
 }
 
 .block_text_team2 {
-    width: 700px;
-    height: 80px;
+    max-width: 700px;
+    max-height: 80px;
     overflow: scroll;
 }
 
@@ -271,6 +381,21 @@ video {
     margin: 44px 0px 35px 0px;
     padding-right: 33px;
     display: inline-block;
+    max-width: 900px;
+}
+
+.team_link_block {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 1320px) {
+    .team_link {
+        text-align: center;
+        margin: 20px auto;
+        white-space: nowrap;
+    }
 }
 
 .card_team_mini {
@@ -284,11 +409,13 @@ video {
 .card_block {
     display: flex;
     margin: 0;
+    max-width: 900px;
+    max-height: 230px;
 }
 
 .name_card_team {
     position: absolute;
-    left: 0;
+    left: 24.5%;
     bottom: 0;
     cursor: pointer;
     background-color: black;
@@ -298,18 +425,25 @@ video {
     text-transform: uppercase;
     letter-spacing: 0.17px;
     text-decoration: none;
-    padding: 10px 44px 10px 51px;
 }
 
 .box_subscribe {
     padding-top: 140px;
     padding-bottom: 140px;
-    text-align: center;
-    width: 1577px;
-    height: 512px;
+    max-width: 1577px;
+    max-height: 512px;
     background-color: #f5f0dd;
     text-align: center;
-    margin-top: 110px;
+    margin: 0;
+}
+
+@media (max-width: 1305px) {
+    .box_subscribe {
+        display: inline-block;
+        padding: 70px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
 }
 
 .subscribe_text {
@@ -363,6 +497,14 @@ video {
     border-radius: 5px;
 }
 
+@media (max-width: 1012px) {
+    .inp_form {
+        margin: 75px 5px 15px 0px;
+        max-width: 200px;
+        max-height: 50px;
+    }
+}
+
 input[type="text"]::placeholder {
     color: black;
     opacity: 0.7;
@@ -377,6 +519,14 @@ input[type="text"]::placeholder {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: left;
+}
+
+@media (max-width: 1012px) {
+    .message {
+        margin: 15px;
+        max-width: 500px;
+        max-height: 150px;
+    }
 }
 
 textarea[type="text"]::placeholder {
@@ -400,27 +550,52 @@ textarea[type="text"]::placeholder {
     letter-spacing: 0.32px;
 }
 
+@media (max-width: 1012px) {
+    .btn_sub {
+        max-width: 500px;
+        max-height: 70px;
+    }
+}
+
 .get_form {
     margin: 0px 107px 0px 0px;
+}
+
+@media (max-width: 1564px) {
+    .get_form {
+        margin: 0px 50px 0px 0px;
+    }
 }
 
 .block_touch {
     margin-bottom: 110px;
     margin-left: 165px;
     position: relative;
-    height: 731px;
-    width: 1414px;
+    max-height: 731px;
+    max-width: 1414px;
 }
 
 .info_block {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 145px 0px 0px 79px;
+    padding: 145px 10px 60px 79px;
     background-color: #2d2d2d;
-    width: 577px;
-    height: 481px;
+    max-width: 577px;
+    max-height: 481px;
     margin: 0;
+}
+
+@media (max-width: 1283px) {
+    .info_block {
+        display: none;
+    }
+}
+
+@media (max-width: 1550px) {
+    .info_block {
+        padding: 20px auto;
+    }
 }
 
 .title_info_block {
@@ -444,8 +619,8 @@ textarea[type="text"]::placeholder {
 /*FOOTER*/
 
 .footer {
-    width: 1583px;
-    height: 111px;
+    max-width: 1583px;
+    max-height: 111px;
     display: flex;
     padding: 47px 167px 31px 169px;
     justify-content: space-between;
