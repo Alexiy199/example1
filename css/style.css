@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    margin: 0 auto;
+    margin: 100px auto 0px;
     position: relative;
     max-width: 1579px;
     background-color: #f6f2f2;
@@ -31,27 +31,108 @@ body {
     }
 }
 
+
+@media (max-width: 767px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: static;
+        margin: 60px auto;
+    }
+
+
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     text-align: center;
-    max-width: 1249px;
-    max-height: 89px;
+    align-items: center;
+    width: 100vw;
+    height: 89px;
     background-color: #000000;
+}
+
+.btn_subscribe_nob {
+    display: none;
+}
+
+.info_link {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .burger {
+        position: relative;
+        width: 31px;
+        align-items: center;
+    }
+    .brg_link {
+        display: block;
+        margin: 10px 0px;
+        width: 30px;
+        height: 3px;
+        background-color: wheat;
+    }
+    .brg_link::before,
+    .brg_link::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: wheat;
+    }
+    .brg_link::before {
+        margin-top: 20px;
+    }
+    .btn_subscribe_nob {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #ff2d2d;
+        border-radius: 4px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #ff2d2d;
+        font-weight: 700;
+        line-height: 34.06px;
+        text-transform: uppercase;
+    }
+    .info_link {
+        display: block;
+    }
 }
 
 .navigation {
     padding: 44px 24px 33px 23px;
     text-decoration: none;
     color: #e0e0e0;
-    font-family: "Open Sans";
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.49px;
     transition: all 0.8s ease 0s;
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+    nav {
+        height: 50px;
+        justify-content: right;
+        flex-direction: row-reverse;
+        padding: 0px 10px;
+    }
 }
 
 .navigation:hover {
@@ -73,10 +154,17 @@ h1 {
     letter-spacing: 1.5px;
 }
 
-@media (max-height: 1400px) {
+@media (max-width: 1400px) {
     h1 {
         text-align: center;
         margin: 40px 10px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+        margin: 0 auto;
     }
 }
 
@@ -93,7 +181,7 @@ h1 {
     line-height: 28px;
 }
 
-@media (max-height: 1400px) {
+@media (max-width: 1400px) {
     .text_header {
         text-align: center;
         margin: 30px auto;
@@ -102,9 +190,9 @@ h1 {
 
 .video {
     width: 551px;
-    height: 356px;
+    max-height: 310px;
     position: absolute;
-    top: 221px;
+    top: 200px;
     right: 164px;
 }
 
@@ -114,6 +202,14 @@ h1 {
         max-height: 356px;
         position: static;
         margin: 30px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .video{
+        margin: 0 auto;
+        width: 200px; 
+        height: 200px;
     }
 }
 
@@ -167,6 +263,13 @@ h1 {
     }
 }
 
+
+@media (max-width: 767px) {
+    .box {
+        margin: 0 auto;
+    }
+}
+
 .text_content {
     margin: 112px 0px 0px 0px;
     display: inline-block;
@@ -189,6 +292,12 @@ h1 {
     line-height: 55px;
     text-transform: uppercase;
     letter-spacing: 0.42px;
+}
+
+@media (max-width: 767px) {
+    .text_title{
+        font-size: 30px;
+    }
 }
 
 .child_text_content {
@@ -278,6 +387,14 @@ h1 {
     }
 }
 
+
+@media (max-width: 767px) {
+    .box2 {
+        margin: 20px auto;
+    }
+}
+
+
 .line {
     width: 132px;
     height: 3px;
@@ -302,6 +419,13 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     overflow: scroll;
+}
+
+@media (max-width: 767px) {
+    .cards{
+        height: 292px;
+        margin: 0 auto;
+    }
 }
 
 .cards_item {
@@ -331,6 +455,13 @@ h1 {
     text-decoration: none;
 }
 
+@media (max-width: 767px) {
+    .cards_link{
+        margin: 5px 5px;
+        font-size: 19px;
+        line-height: normal;
+    }
+}
 .cards_link:hover {
     color: #ff2d2d;
 }
@@ -344,8 +475,9 @@ h1 {
 @media (max-width: 1320px) {
     .box_team {
         display: flex;
+        text-align: center;
+        align-items: center;
         margin: 0 auto;
-        overflow: scroll;
         flex-direction: column;
     }
 }
@@ -398,6 +530,17 @@ h1 {
     }
 }
 
+
+@media (max-width: 767px) {
+    .team_link_block {
+        text-align: center;
+        margin: 25px auto;
+    }
+    .team_link{
+        margin: 0;
+    }
+}
+
 .card_team_mini {
     position: relative;
     margin: 0px 20px 0px 0px;
@@ -411,6 +554,21 @@ h1 {
     margin: 0;
     max-width: 900px;
     max-height: 230px;
+}
+
+@media (max-width: 767px) {
+    .card_block{
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: scroll;
+        max-width: 200px;
+        max-height: 230px;
+    }
+    .card_team_mini{
+        margin: 5px 0px 7px 0px ;
+    }
 }
 
 .name_card_team {
@@ -443,6 +601,12 @@ h1 {
         padding: 70px;
         margin: 0 auto;
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .box_subscribe {
+        display: none;
     }
 }
 
@@ -575,6 +739,33 @@ textarea[type="text"]::placeholder {
     max-width: 1414px;
 }
 
+@media (max-width: 767px) {
+    .block_touch{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;    
+    margin: 0 auto;
+    padding: 0;
+    }
+    .inp_form{
+        margin: 15px auto 10px;
+    }
+    .message{
+        width: 300px;
+        height: 200px;
+        margin: 15px auto;
+    }
+    .get_form{
+        margin: 0 auto;
+    }
+    .btn_sub{
+        width: 200px;
+        height: 50px;
+        margin: 20px auto;
+    }
+}
+
 .info_block {
     position: absolute;
     right: 0;
@@ -625,6 +816,12 @@ textarea[type="text"]::placeholder {
     padding: 47px 167px 31px 169px;
     justify-content: space-between;
     background-color: #000000;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        display: none;
+    }
 }
 
 .foter_text {
