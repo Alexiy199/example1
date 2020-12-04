@@ -31,7 +31,6 @@ body {
     }
 }
 
-
 @media (max-width: 767px) {
     .header {
         display: flex;
@@ -41,7 +40,7 @@ body {
         position: static;
         margin: 60px auto;
     }
-
+}
 
 nav {
     position: fixed;
@@ -206,9 +205,9 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .video{
+    .video {
         margin: 0 auto;
-        width: 200px; 
+        width: 200px;
         height: 200px;
     }
 }
@@ -263,7 +262,6 @@ h1 {
     }
 }
 
-
 @media (max-width: 767px) {
     .box {
         margin: 0 auto;
@@ -295,7 +293,7 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .text_title{
+    .text_title {
         font-size: 30px;
     }
 }
@@ -387,13 +385,11 @@ h1 {
     }
 }
 
-
 @media (max-width: 767px) {
     .box2 {
         margin: 20px auto;
     }
 }
-
 
 .line {
     width: 132px;
@@ -422,7 +418,7 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .cards{
+    .cards {
         height: 292px;
         margin: 0 auto;
     }
@@ -456,7 +452,7 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .cards_link{
+    .cards_link {
         margin: 5px 5px;
         font-size: 19px;
         line-height: normal;
@@ -530,13 +526,12 @@ h1 {
     }
 }
 
-
 @media (max-width: 767px) {
     .team_link_block {
         text-align: center;
         margin: 25px auto;
     }
-    .team_link{
+    .team_link {
         margin: 0;
     }
 }
@@ -557,7 +552,7 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .card_block{
+    .card_block {
         display: inline-block;
         flex-direction: column;
         justify-content: center;
@@ -566,8 +561,8 @@ h1 {
         max-width: 200px;
         max-height: 230px;
     }
-    .card_team_mini{
-        margin: 5px 0px 7px 0px ;
+    .card_team_mini {
+        margin: 5px 0px 7px 0px;
     }
 }
 
@@ -740,26 +735,26 @@ textarea[type="text"]::placeholder {
 }
 
 @media (max-width: 767px) {
-    .block_touch{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;    
-    margin: 0 auto;
-    padding: 0;
+    .block_touch {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
     }
-    .inp_form{
+    .inp_form {
         margin: 15px auto 10px;
     }
-    .message{
+    .message {
         width: 300px;
         height: 200px;
         margin: 15px auto;
     }
-    .get_form{
+    .get_form {
         margin: 0 auto;
     }
-    .btn_sub{
+    .btn_sub {
         width: 200px;
         height: 50px;
         margin: 20px auto;
