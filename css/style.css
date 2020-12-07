@@ -207,7 +207,7 @@ h1 {
 @media (max-width: 767px) {
     .video {
         margin: 0 auto;
-        width: 200px;
+        width: 300px;
         height: 200px;
     }
 }
@@ -339,6 +339,12 @@ h1 {
 
 .service_item:nth-child(odd) {
     margin: 0px 50px 49px 0px;
+}
+
+@media (max-width: 768px) {
+    .service_item:nth-child(odd) {
+        margin: 0 auto;
+    }
 }
 
 .service_text {
@@ -845,7 +851,7 @@ textarea[type="text"]::placeholder {
     background-color: #000000;
     padding-bottom: 50px;
     transform: perspective(400px) rotate3d(1, 100, 1, -30deg);
-    transition: all 0.6s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .modal1_open {
@@ -861,7 +867,7 @@ textarea[type="text"]::placeholder {
     display: inline-block;
     background-color: #000000;
     padding-bottom: 50px;
-    transition: all 0.6s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .close {
@@ -909,7 +915,7 @@ textarea[type="text"]::placeholder {
     text-align: center;
     padding-bottom: 20px;
     background-color: #000000;
-    transition: all 0.5ss ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .box_subscribe_mob_active {

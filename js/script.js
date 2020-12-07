@@ -19,7 +19,8 @@ btnSubscribe.addEventListener('click', function (d) {
     console.log('yes')
 });
 
-let close = document.querySelectorAll('.close');
+let close = document.querySelectorAll("#close");
+
 close.forEach(function (elem) {
     elem.addEventListener('click', function () {
         modal2.classList.remove('box_subscribe_mob_active');
