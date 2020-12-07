@@ -855,7 +855,7 @@ textarea[type="text"]::placeholder {
 }
 
 .modal1_open {
-    transform: translate(-50%);
+    transform: perspective(0) rotate3d(1, 1, 1, 0deg);
     min-width: 300px;
     opacity: 1;
     visibility: visible;
@@ -863,6 +863,7 @@ textarea[type="text"]::placeholder {
     position: absolute;
     left: 50%;
     top: 100px;
+    transform: translate(-50%);
     z-index: 5;
     display: inline-block;
     background-color: #000000;
@@ -919,7 +920,7 @@ textarea[type="text"]::placeholder {
 }
 
 .box_subscribe_mob_active {
-    transform: none;
+    transform: perspective(0) rotate3d(1, 1, 1, 0deg);
     opacity: 1;
     visibility: visible;
     display: inline-block;
