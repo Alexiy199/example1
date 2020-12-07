@@ -135,9 +135,10 @@ nav {
 @media (max-width: 767px) {
     .block_for_burger {
         position: fixed;
-        top: 100px;
+        top: 0;
         right: -100%;
         opacity: 0;
+        padding-top: 100px;
         visibility: hidden;
         width: 100%;
         height: 100%;
@@ -147,7 +148,7 @@ nav {
     .block_for_burger_active {
         position: fixed;
         right: 0;
-        top: 100px;
+        top: 0;
         z-index: 8;
         opacity: 1;
         visibility: visible;
