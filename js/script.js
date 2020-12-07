@@ -26,6 +26,13 @@ close.forEach(function (elem) {
         modal2.classList.remove('box_subscribe_mob_active');
         modal1.classList.remove('modal1_open');
         overlay.classList.remove('overlay_active');
-        console.log('yes')
     })
 });
+//BURGER NENU
+let brgMenu = document.querySelector('.block_for_burger');
+let brgLink = document.querySelector('.brg_link');
+brgLink.addEventListener('click', function (el) {
+    el.preventDefault();
+    brgMenu.classList.toggle('block_for_burger_active');
+    brgLink.classList.toggle('burger_active');
+})

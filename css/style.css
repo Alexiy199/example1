@@ -67,31 +67,41 @@ nav {
 }
 
 @media (max-width: 767px) {
-    .burger {
-        position: relative;
-        width: 31px;
-        align-items: center;
-    }
     .brg_link {
         display: block;
-        margin: 10px 0px;
         width: 30px;
         height: 3px;
-        background-color: wheat;
+        background-color: white;
+        transform: translateY(-15px);
+        transition: all 0.5s ease 0s;
+        z-index: 10;
     }
     .brg_link::before,
     .brg_link::after {
         content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
         display: block;
         width: 30px;
         height: 3px;
         background-color: wheat;
     }
     .brg_link::before {
-        margin-top: 20px;
+        transform: translateY(10px);
+    }
+    .brg_link::after {
+        transform: translateY(-5px);
+    }
+    .burger_active {
+        z-index: 10;
+        background-color: red;
+        transform: rotate(-45deg);
+        transition: all 0.5s ease 0s;
+    }
+    .burger_active::before {
+        background-color: red;
+        transform: rotate(75deg);
+    }
+    .burger_active::after {
+        display: none;
     }
     .btn_subscribe_mob {
         display: block;
@@ -123,8 +133,33 @@ nav {
 }
 
 @media (max-width: 767px) {
+    .block_for_burger {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.5s ease 0s;
+    }
+    .block_for_burger_active {
+        position: fixed;
+        right: 0;
+        top: 100px;
+        z-index: 8;
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        transition: all 0.5s ease 0s;
+    }
     .navigation {
-        display: none;
+        display: block;
+        border-bottom: solid 1px white;
+        padding: 10px;
+        background-color: #000000;
+        z-index: 8;
     }
     nav {
         height: 50px;
@@ -846,7 +881,7 @@ textarea[type="text"]::placeholder {
     position: absolute;
     left: -100%;
     top: 100px;
-    z-index: 5;
+    z-index: 7;
     display: inline-block;
     background-color: #000000;
     padding-bottom: 50px;
@@ -864,7 +899,7 @@ textarea[type="text"]::placeholder {
     left: 50%;
     top: 100px;
     transform: translate(-50%);
-    z-index: 5;
+    z-index: 7;
     display: inline-block;
     background-color: #000000;
     padding-bottom: 50px;
