@@ -896,6 +896,7 @@ textarea[type="text"]::placeholder {
 	position: fixed;
 	left: 50%;
 	top: 100px;
+	transform: translate(-50%, 0%);
 	display: inline-block;
 	background-color: #000000;
 	padding-bottom: 50px;
