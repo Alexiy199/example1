@@ -890,7 +890,7 @@ textarea[type="text"]::placeholder {
 }
 
 .modal1_open {
-	transform: perspective(0) rotate3d(1, 1, 1, 0deg);
+	transform: perspective(400px) rotate3d(0, 0, 0, 0deg);
 	min-width: 300px;
 	opacity: 1;
 	visibility: visible;
@@ -939,7 +939,7 @@ textarea[type="text"]::placeholder {
 }
 
 .box_subscribe_mob {
-	transform: perspective(400px) rotate3d(100, 1, 1, 30deg);
+	transform: perspective(400px) rotate3d(1, 0, 0, 30deg);
 	opacity: 0;
 	visibility: hidden;
 	display: inline-block;
