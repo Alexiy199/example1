@@ -889,7 +889,7 @@ textarea[type="text"]::placeholder {
 }
 
 .modal1_open {
-	transform: translate(-50%, 0%);
+	transform: translate(-50%, 5%);
 	width: 300px;
 	opacity: 1;
 	visibility: visible;
