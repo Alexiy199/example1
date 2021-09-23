@@ -879,13 +879,13 @@ textarea[type="text"]::placeholder {
 	opacity: 0;
 	visibility: hidden;
 	text-align: center;
-	position: fixed;
+	position: absolute;
 	left: -100%;
 	top: 100px;
 	display: inline-block;
 	background-color: #000000;
 	padding-bottom: 50px;
-	transform: perspective(400px) rotate3d(1, 100, 1, -30deg);
+	transform: perspective(400px) rotate3d(0, 1, 0, -30deg);
 	transition: all 0.4s ease 0s;
 }
 
